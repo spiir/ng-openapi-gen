@@ -2,18 +2,18 @@
 import { Injectable } from '@angular/core';
 
 /**
- * Global configuration
- */
+* Global configuration
+*/
 @Injectable({
-  providedIn: 'root',
+providedIn: 'platform',
 })
 export class {{configurationClass}} {
-  rootUrl: string = '{{{rootUrl}}}';
+rootUrl: string = '{{{rootUrl}}}';
 }
 
 /**
- * Parameters for `{{moduleClass}}.forRoot()`
- */
+* Parameters for `{{moduleClass}}.forRoot()`
+*/
 export interface {{configurationParams}} {
-  rootUrl?: string;
+rootUrl?: string;
 }
